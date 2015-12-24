@@ -1,4 +1,4 @@
-# pure_javascript_module
+# News Article Widget Written in Pure Javascript Modules
 a simple widget written in pure modular javascript, no jquery no other library or framework or templating engine 
 
 # Requirements:
