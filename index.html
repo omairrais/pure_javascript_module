@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suitsupply Task: Umair Raees</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Umair Raees">
+    <meta name="description" content="Task assigned to Umair from Suitsupply">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="main_container">
+    <header class="article_header">
+        <div id="search_container" class="search_container"><input type="text" id="article_search_input" /> </div> <div id="sort_by_time"></div>
+    </header>
+    <h1>Articles:</h1>
+    <div id="article_container"></div>
+</div>
+    <script type="text/javascript" src="js/Service.js"></script>
+    <script type="text/javascript" src="js/ArticleWidget.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            /*documentation:
+                optional count:[int] use for showing total number of articles,
+                optional related_stories:[boolean] true/false for show/hide the related stories in full article view,
+              usage:
+             ArticleWidget.init({count:5, related_stories:false});
+            */
+            ArticleWidget.init();
+        }
+
+    </script>
+</body>
+</html>

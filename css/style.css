@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body{ color:#918f89; font-family:'SegoeUI', Arial, Helvetica, sans-serif; }
+a{ color:#0087bf; text-decoration: none; }
+
+.main_container{ margin: 20px; }
+.main_container h1{ font-size: 20px; font-weight: normal; color: #445961; margin: 20px 0px;  }
+.article_header{ overflow: hidden; }
+.article_header .search_container{ float: left; }
+.article_header .search_container input{border:1px solid #918f89; padding: 5px; margin-right: 20px; margin-bottom: 20px; }
+.article_header #sort_by_time{ float:left; cursor: pointer; line-height: 24px; font-size: 14px; background: url("../images/time_sort_icon.png") no-repeat right top; padding-right: 30px; }
+#sort_by_time:before{ content: "sort by time: ";}
+#sort_by_time.sort_true{ background-position: right -26px; }
+
+.articles_list{ list-style: square; margin:20px; }
+.articles_list li{ margin-bottom: 20px; cursor: pointer; line-height: 20px; }
+.articles_list li b{ color: #25a2d8; }
+.articles_list li span.content{ display: none; }
+
+.light_box{ padding: 20px; position: fixed; width: 100%; height: 100%; left: 0px; top: 0px; background: white; overflow: auto; }
+.light_box h2{ font-size: 20px; font-weight: normal; color: #25a2d8; margin: 20px 0px; }
+.light_box img{ width: 100%; max-width:640px; }
+.light_box p{ margin: 20px 0px; line-height: 20px; }
+.light_box p a{ font-size: 12px; }
+.light_box h3{ font-size: 18px; margin: 20px 0px; color: #445961; }
+.light_box .back_button{ cursor: pointer;  }
+.light_box .back_button:after{content: "back to articles"; }
+
+.relatedStories{}
+.relatedStories li{ margin-bottom: 20px; }
+.relatedStories li a{ display: block; }
+.relatedStories span { font-size: 12px; display: inline-block; }
+.relatedStories span.date{ margin-left: 7px;  }
+.relatedStories span.date:before{content: "at: ";}
+.relatedStories span.author{ }
+.relatedStories span.author:before{content: "by: ";}
+
+.loader{ font-size: 12px; background:url("../images/ajax-loader-white.gif") no-repeat; padding-left: 30px; height: 25px; line-height: 16px; }
